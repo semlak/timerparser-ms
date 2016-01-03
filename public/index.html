@@ -1,0 +1,28 @@
+    <html>
+      <head>
+        <title>FCC API Basejump: A Timestamp microservice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">    
+        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+      </head>
+      <body>
+        <div class='container'>
+          <h1>API Basejump: A Timestamp microservice</h1>
+          <p>This is the result of an assignment from the FreeCodeCamp cirriculum.</p>
+          <div class='bs-callout bs-callout-primary'>
+            <p>User stories:</p>
+            <ol>
+            	<li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+        			<li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        			<li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+        		</ol>
+            <p>Note: Natural input and output date is based on server's locale.
+          </div>
+          <h3>Example usage:</h3>
+          <p class='example'>https://timestamp-ms.herokuapp.com/December%2015,%202015</p>
+          <p class='example'>https://timestamp-ms.herokuapp.com/1450159200</p>
+          <h3>Example output:</h3>
+          <p class='example'>{ "unix": 1450159200, "natural": "December 15, 2015" }</p>
+        </div>
+      </body>
+    </html>
+

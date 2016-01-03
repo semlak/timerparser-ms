@@ -4,11 +4,16 @@ var express = require('express');
 
 var app = express();
 var url = require('url');
-
-
 var port = process.env.PORT || 8080;
+//app.engine('.html', require('jade'));
+app.set('view engine', 'jade');
+app.use(express.static(__dirname + '/public'));
 
 
+app.get('/', function(req, res) {
+	res.render('index.html');
+    res.end();
+});
 
 app.get('/:timeInfo', function(req, res) {
 	var timestamp_request = req.params.timeInfo;
